@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">StudentProfile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="langText">Favorite Programming Language:</string>
+    <string name="java">Java</string>
+    <string name="c">C</string>
+    <string name="csharp">C#</string>
+    <string name="accountlabel">Account is searchable</string>
+    <string name="moodlabel">Your Current mood:</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_student_display">StudentDisplay</string>
+    <string name="moodlabel1">Mood:</string>
+    <string name="title_activity_student_edit">StudentEdit</string>
+    <string name="save">Save</string>
+</resources>

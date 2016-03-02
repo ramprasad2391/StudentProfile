@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:hint="@string/name"
+            android:visibility="invisible"/>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:hint="@string/email"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/langText"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:visibility="invisible"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/java"
+                android:checked="true"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <RadioButton
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/c"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <RadioButton
+                android:id="@+id/csharp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/csharp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/accountLayout"
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accountlabel"
+                android:layout_weight="1"
+                android:text="@string/accountlabel"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+            <Switch
+                android:id="@+id/searchSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/moodLabel"
+            android:text="@string/moodlabel"
+            android:visibility="invisible"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+        <SeekBar
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:visibility="invisible"
+            android:progress="30"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:text="@string/save"
+            android:onClick="onSave"/>
+
+    </LinearLayout>
+</ScrollView>
